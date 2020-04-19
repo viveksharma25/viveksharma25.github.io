@@ -4,29 +4,29 @@
   <title>Vivek Sharma Software Engineer | Distributed Computing, Big Data Technologies & Cyber Security Enthusiast</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/customstyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script/myjsfile.js"></script>
 </head>
 <body>
 
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+        aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutMe">ABOUT ME</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#aboutMe">ABOUT ME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
       </ul>
     </div>
   </div>
@@ -38,24 +38,26 @@
         <div style="display: inline;"> Hello, my name is </div><div style="display: inline;">VIVEK SHARMA.</div>
     </div>
     <p style="font-size: 22px; margin-top: 2%;">I build computer programs and scalable dynamic web applications.</p>
-    <a target="_blank" rel="noopener noreferrer" href="docs/ResumeVivekSharmaMarch2020.pdf" class="btn btn-default btn-lg" style ="border-color: darkorange; margin: 1% 0% 1% 0%;">Resume</a>
-    <div class="row">
+    <a target="_blank" rel="noopener noreferrer" href="docs/ResumeVivekSharmaFeb2020.pdf" class="btn btn-light btn-lg" style ="border-color: darkorange; margin: 1% 0% 1% 0%;">Resume</a>
+    <div class="socialLinks">
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vivek25" style="color:black; margin-right: 30px;"><i class="fa fa-linkedin"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/SharmaVivek91" style="color: black;"><i class="fa fa-github"></i></a>
     </div>
 </div>
 
 
-<div class="container-fluid-body bg-2 text-center">
+<div class="container-fluid-body bg-2">
     <div class="content-div">
-        <div id="aboutMe" class = "row">
-            <h3>About Me</h3>
+        <div id="aboutMe" class = "row justify-content-center">
+            <h4>About Me</h4>
         </div>
-        <div class = "row">
+        <div class = "row justify-content-center">
             <div class = "col-sm-2">
-                <img src="images/profile.jpg" class="img-responsive img-circle " style="display:inline" alt="Profile" width="150" height="150">
+                <div class="mt-3 text-center">
+                    <img src="images/profile.jpg" class="img-responsive rounded-circle " style="display:inline;height: auto; max-width: 100%;" alt="Profile" width="150" height="150">
+                </div>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-10 text-center">
                 <p style ="padding-top: 10px; margin-right: 15px;" class = "text-justify">I am an experienced Software Engineer and Master of Computer Science with a proven ability to work independently 
                     and as a part of a team to deliver high quality work. I enjoy building computer programs and scalable dynamic web applications.
                     I have working experience in design, implementation & maintenance of project modules.
@@ -64,7 +66,7 @@
                 <p class ="text-left"> You can get in touch with me, I'll try my best to get back to you!</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center socialLinks">
             <a target="_blank" rel="noopener noreferrer" href="mailto:vivek_sharma@outlook.in" style="color:white; font-size: 25px;"><i class="fa fa-envelope"></i></a>
         </div>    
     </div>
@@ -75,53 +77,130 @@
     <div class="content-div">    
         <h2>My Projects</h2><br>
         <div class="row">
-            <div class="col-sm-4"> 
-                <h3>Performance Tuning of Hadoop Over OrangeFS</h3>
-                <p class="text-justify">Benchmarked the performance of OrangeFS as a storage layer and compared it with HDFS performance by 
-                running standard Hadoop benchmarks over both and finally tuned Hadoop over OrangeFS</p>
+            <div class="col-md-4 card">
+                <div id="front1" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>Performance Tuning of Hadoop Over OrangeFS</p>
+                    </div>
+                </div>
+                <div id="back1" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">Benchmarked the performance of OrangeFS as a storage layer and compared it with HDFS performance by 
+                        running standard Hadoop benchmarks over both and finally tuned Hadoop over OrangeFS</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4"> 
-                <h3>Benchmarking</h3>
-                <p class="text-justify">Designed and implemented programs for benchmarking different parts of computer system CPU, Memory, Disk and Network. </p>
+
+            <div class="col-md-4 card">
+                <div id="front2" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>Benchmarking</p>
+                    </div>
+                </div>
+                <div id="back2" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">Designed and implemented programs for benchmarking different parts of computer system CPU, Memory, Disk and Network.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4"> 
-                <h3>Magikart</h3>
-                <p class="text-justify">Designed and built a responsive website for a buisness to showcase their products and services.</p>
+
+            <div class="col-md-4 card">
+                <div id="front3" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>Magikart</p>
+                    </div>
+                </div>
+                <div id="back3" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">Designed and built a responsive website for a buisness to showcase their products and services.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         <div class="row">
-            <div class="col-sm-4 ">
-                <h3>Analyzing Email Marketing Campaigns of a Magazine Publisher</h3>
-                <p class="text-justify">The aim of this project was to check if the email marketing campaign was successful or not.
-                    This was my capstone project and it involved performing certain data transformations & pre-calculations on data stored on HDFS 
-                    and representation of outcomes in Tableau BI charts on a dashboard. </p>
+            <div class="col-md-4 card">
+                <div id="front4" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>Analyzing Email Marketing Campaigns of a Magazine Publisher</p>
+                    </div>
+                </div>
+                <div id="back4" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">The aim of this project was to check if the email marketing campaign was successful or not.
+                        This was my capstone project and it involved performing certain data transformations & pre-calculations on data stored on HDFS 
+                        and representation of outcomes in Tableau BI charts on a dashboard. 
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h3>Sorting Performance Evaluation</h3>
-                <p class="text-justify">Implemented a shared memory external sort application using a multi threaded approach. Also implemented a Hadoop Sort and 
-                    Spark Sort Application using JAVA and finally a performance evaluation for all these implementations was done.</p>
+
+            <div class="col-md-4 card">
+                <div id="front5" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>Sorting Performance Evaluation</p>
+                    </div>
+                </div>
+                <div id="back5" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">Implemented a shared memory external sort application using a multi threaded approach. Also implemented a Hadoop Sort and 
+                        Spark Sort Application using JAVA and finally a performance evaluation for all these implementations was done.</p>
+                    </div>
+                </div>
             </div>
-   
-            <div class="col-sm-4 ">
-                <h3>A Simple Napster Style Peer to Peer File Sharing System</h3>
-                <p class="text-justify">A P2P system consisting of a central indexing server and peer was designed and implemented.</p>
+
+            <div class="col-md-4 card">
+                <div id="front6" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>A Simple Napster Style Peer to Peer File Sharing System</p>
+                    </div>
+                </div>
+                <div id="back6" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">A P2P system consisting of a central indexing server and peer was designed and implemented.</p>
+                    </div>
+                </div>
             </div>
         </div>
         
         <div class="row">
-            <div class="col-sm-4 ">
-                <h3>Weather Application</h3>
-                <p class="text-justify">Built an android application to check weather for your city.</p>
+            <div class="col-md-4 card">
+                <div id="front7" class=" flip-card-front">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p>Weather Application</p>
+                    </div>
+                </div>
+                <div id="back7" class=" flip-card-back">
+                    <i class="fa fa-folder-open mt-4"></i>
+                    <div class="card-body">
+                        <p class="text-justify">Built an android application to check weather for your city.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
 </div>
 
-<footer class="container-fluid-footer bg-4 text-center">
+<footer class="container-fluid-footer bg-4 text-center socialLinks">
   <p>Vivek Sharma</p>
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vivek25" style="color: white; margin-right: 20px;"><i class="fa fa-linkedin"></i></a>
   <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/SharmaVivek91" style="color: white;"><i class="fa fa-github"></i></a> 
 </footer>
-
 </body>
 </html>
+
