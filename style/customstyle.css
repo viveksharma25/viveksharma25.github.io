@@ -105,3 +105,14 @@ p {
 	width: 9em;
 	font-size: 30px;
 }
+
+.details-btn{
+	margin-top: 70%;
+}
+.project-link{
+	color: black;
+}
+
+.project-link:hover{
+	color: #1abc9c !important;
+}
