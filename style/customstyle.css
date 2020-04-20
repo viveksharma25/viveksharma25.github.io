@@ -73,4 +73,35 @@ p {
   	display:none;
 }
 
+.anim-typewriter {
+	animation: typewriter 5s steps(40) 1s 1 normal both,
+	blinkTextCursor 500ms steps(40) 5s normal both;
+}
 
+@keyframes typewriter {
+	from {
+		width:0;
+	}
+	to {
+		width:9em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color:#212529;
+	}
+	to {
+		border-right-color: white;
+	}
+}
+
+.line {
+	margin: 0 auto;
+    margin-top: 2%;
+    white-space: nowrap;
+    overflow: hidden;
+	border-right: 2px solid #212529;
+	width: 9em;
+	font-size: 30px;
+}
