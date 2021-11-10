@@ -35,6 +35,16 @@ $(document).ready(function() {
         $("#back7").fadeIn("slow");
        
     }),
+    $("#href8").on("click" , function(){
+    $("#front8").hide();
+    $("#back8").fadeIn("slow");
+       
+    }),
+    $("#href9").on("click" , function(){
+        $("#front9").hide();
+        $("#back9").fadeIn("slow");
+       
+    }),
     $("#undo1").click(function(){
         $("#back1").hide();
         $("#front1").fadeIn("slow");
@@ -68,5 +78,13 @@ $(document).ready(function() {
     $("#undo7").click(function(){
         $("#back7").hide();
         $("#front7").fadeIn("slow");
+    }),
+     $("#undo8").click(function(){
+        $("#back8").hide();
+        $("#front8").fadeIn("slow");
+    })
+    $("#undo9").click(function(){
+        $("#back9").hide();
+        $("#front9").fadeIn("slow");
     })
 });
