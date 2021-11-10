@@ -36,8 +36,8 @@ $(document).ready(function() {
        
     }),
     $("#href8").on("click" , function(){
-    $("#front8").hide();
-    $("#back8").fadeIn("slow");
+        $("#front8").hide();
+        $("#back8").fadeIn("slow");
        
     }),
     $("#href9").on("click" , function(){
@@ -78,8 +78,8 @@ $(document).ready(function() {
     $("#undo7").click(function(){
         $("#back7").hide();
         $("#front7").fadeIn("slow");
-    }),
-     $("#undo8").click(function(){
+    })
+    $("#undo8").click(function(){
         $("#back8").hide();
         $("#front8").fadeIn("slow");
     })
