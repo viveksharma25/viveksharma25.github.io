@@ -3,6 +3,85 @@ body {
 	line-height: 1.8;
 	color: #f5f6f7;
 }
+.clip-about{
+	clip-path: inset(2% 9% 2% 9%);
+	background-color: aquamarine !important;
+}
+.skill-style{
+	margin-left: 9%;
+	margin-right: 9%;
+	background-color: azure !important;
+}
+.font-about{
+	font-family: monospace;
+    font-size: x-large;
+	color: darkorchid;
+}
+.about-head{
+	font-size: xx-large;
+    font-weight: bold;
+}
+.cardp1{
+	background-color: ghostwhite;
+}
+.cardp2{
+	background-color: cornsilk;
+}
+.cardp3{
+	background-color: greenyellow;
+}
+.cardp4{
+	background-color: honeydew;
+}
+.cardp5{
+	background-color: lavenderblush;
+}
+.cardp6{
+	background-color: crimson;
+}
+.cardp7{
+	background-color: lightcyan;
+}
+.cardp8{
+	background-color: lightpink;
+}
+.cardp9{
+	background-color: gold;
+}
+ul.cloud {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	line-height: 2.5rem;
+}
+
+ul.cloud a {
+	color: #a33;
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.125rem 0.25rem;
+	text-decoration: none;
+	position: relative;
+}
+
+ul.cloud a[data-weight="1"] { --size: 1; color: beige;}
+ul.cloud a[data-weight="2"] { --size: 2; color:aqua}
+ul.cloud a[data-weight="3"] { --size: 3; color:lightsalmon }
+ul.cloud a[data-weight="4"] { --size: 4; color: coral; }
+ul.cloud a[data-weight="5"] { --size: 5; color: mediumaquamarine;}
+ul.cloud a[data-weight="6"] { --size: 6; color:mediumvioletred}
+ul.cloud a[data-weight="7"] { --size: 9; color: gold;}
+ul.cloud a[data-weight="8"] { --size: 12; color:yellowgreen}
+ul.cloud a[data-weight="9"] { --size: 15; color: tomato;}
+
+ul.cloud a {
+  --size: 4;
+  font-size: calc(var(--size) * 0.25rem + 0.5rem);
+  /* ... */
+}
 
 p {
 	font-size: 16px;
@@ -66,7 +145,7 @@ p {
 	margin-right: 10%;
 }
 .socialLinks a:hover {
-	color: #1abc9c !important;
+	color:cornsilk !important;
 }
 	
 .flip-card-back {
