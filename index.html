@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/customstyle.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/myjsfile.js"></script>
@@ -47,10 +48,10 @@
 </div>
 
 
-<div class="container-fluid-body bg-2">
+<div class="container-fluid-body bg-2 clip-about">
     <div class="content-div">
         <div id="aboutMe" class = "row justify-content-center">
-            <h4>About Me</h4>
+            <h4 class = "about-head">About Me</h4>
         </div>
         <div class = "row justify-content-center">
             <div class = "col-sm-2">
@@ -59,17 +60,45 @@
                 </div>
             </div>
             <div class="col-sm-10 text-center">
-                <p style ="padding-top: 10px; margin-right: 15px;" class = "text-left">I am an experienced Software Engineer and Master of Computer Science with a proven ability to work independently 
-                    and as a part of a team to deliver high quality work. I enjoy building computer programs and scalable dynamic web applications.
+                <p style ="padding-top: 10px; margin-right: 15px;" class = "text-left font-about">I am an experienced Software Engineer and a Master of Computer Science with a proven ability to deliver high quality work. I build scalable computer programs for distributed systems.
                     I have working experience in design, implementation & maintenance of project modules.
-                    My area of interest is in Distributed computing, Big Data Technologies and Computer Security.
+                    My area of interest is in deep learning, distributed computing, and Computer Security.
                 </p>
-                <p class ="text-left"> You can get in touch with me, I'll try my best to get back to you!</p>
+                <p class ="text-left font-about"> If you want to know more about me please feel free to connect with me. I'll try my best to get back to you!</p>
             </div>
         </div>
         <div class="row justify-content-center socialLinks">
             <a target="_blank" rel="noopener noreferrer" href="mailto:vivek_sharma@outlook.in" style="color:white; font-size: 25px;"><i class="fa fa-envelope"></i></a>
         </div>    
+    </div>
+</div>
+<div id="Skills" class="container-fluid-body bg-3 text-center skill-style">
+    <div class="content-div">
+        <h2>Skills</h2><br>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <canvas id="skillChart"></canvas>
+        </div>
+        <div class="col-sm-4">
+            <ul class="cloud" role="navigation" aria-label="Webdev tag cloud">
+                <li><a data-weight="9" href="#/">Java</a></li>
+                <li><a data-weight="6" href="#/">Pyhton</a></li>
+                <li><a data-weight="7" href="#/">JavaScript</a></li>
+                <li><a data-weight="8" href="#/">SQL</a></li>
+                <li><a data-weight="5" href="#/">AWS</a></li>
+                <li><a data-weight="5" href="#/">Azure</a></li>
+                <li><a data-weight="8" href="#/">Spring</a></li>
+                <li><a data-weight="3" href="#/">c#</a></li>
+                <li><a data-weight="6" href="#/">Bash</a></li>
+                <li><a data-weight="7" href="#/">Hibernate</a></li>
+                <li><a data-weight="6" href="#/">Hadoop</a></li>
+                <li><a data-weight="3" href="#/">C</a></li>
+                <li><a data-weight="7" href="#/">Git</a></li>
+                <li><a data-weight="4" href="#/">Jenkins</a></li>
+                <li><a data-weight="6" href="#/">React</a></li>
+              </ul>
+        </div>
     </div>
 </div>
 
@@ -78,7 +107,7 @@
     <div class="content-div">    
         <h2>My Projects</h2><br>
         <div class="row">
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp1">
                 <a class="project-link" id="href1" href="javascript:;">
                     <div id="front1" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -98,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp2">
                 <a class="project-link" id="href2" href="javascript:;">
                     <div id="front2" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -117,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp3">
                 <a class="project-link" id="href3" href="javascript:;">
                     <div id="front3" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -139,7 +168,7 @@
 
 
         <div class="row">
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp4">
                 <a class="project-link" id="href4" href="javascript:;">
                     <div id="front4" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -161,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp5">
                 <a class="project-link" id="href5" href="javascript:;">
                     <div id="front5" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -181,7 +210,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp6">
                 <a class="project-link" id="href6" href="javascript:;">
                     <div id="front6" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -202,7 +231,7 @@
         </div>
         
         <div class="row">
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp7">
                 <a class="project-link" id="href7" href="javascript:;">
                     <div id="front7" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -220,7 +249,8 @@
                     </div>
                 </div>
             </div>
-           <div class="col-md-4 card">
+
+            <div class="col-md-4 card cardp8">
                 <a class="project-link" id="href8" href="javascript:;">
                     <div id="front8" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -232,14 +262,14 @@
                 <div id="back8" class=" flip-card-back">
                     <i class="fa fa-folder-open mt-4"></i>
                     <div class="card-body">
-                        <p class="text-left">Built an android application that provides personalized news content to a user.</p>
+                        <p class="text-left">Built an android application to provides personalized news content.</p>
                         <a class="project-link" id ="undo8" href ="javascript:;"><i class="fa fa-undo"></i></a>
                         <a class="project-link ml-4" target="_blank" rel="noopener noreferrer" href="https://www.github.com/SharmaVivek91"><i class="fa fa-github"></i></a> 
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 card">
+            <div class="col-md-4 card cardp9">
                 <a class="project-link" id="href9" href="javascript:;">
                     <div id="front9" class=" flip-card-front">
                         <i class="fa fa-folder-open mt-4"></i>
@@ -257,8 +287,9 @@
                     </div>
                 </div>
             </div>
-          
+
         </div>
+        
     </div>
   </div>
 </div>
@@ -268,5 +299,7 @@
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vivek25" style="color: white; margin-right: 20px;"><i class="fa fa-linkedin"></i></a>
   <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/SharmaVivek91" style="color: white;"><i class="fa fa-github"></i></a> 
 </footer>
+<script type="text/javascript" src="js/mygraphs.js"></script>
 </body>
 </html>
+
