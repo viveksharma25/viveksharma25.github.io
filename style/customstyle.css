@@ -13,13 +13,11 @@ body {
 	background-color: azure !important;
 }
 .font-about{
-	font-family: monospace;
-    font-size: x-large;
 	color: darkorchid;
 }
 .about-head{
 	font-size: xx-large;
-    font-weight: bold;
+    	font-weight: bold;
 }
 .cardp1{
 	background-color: ghostwhite;
